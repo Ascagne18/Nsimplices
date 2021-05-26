@@ -99,8 +99,7 @@ def cMDS(D,alreadyCentered=False):
     (p,p2)=np.shape(D)
     if p != p2:
         sys.exit("D must be symetric...")
-        
-    
+       
     # Double centering
     if not alreadyCentered:
         J=np.eye(p)-np.ones((p,p))/p
